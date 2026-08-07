@@ -4,6 +4,24 @@
 
 ### Scarica e ascolta la tua musica — semplicemente
 
+[![GitHub release](https://img.shields.io/github/v/release/notsim/italiarr?style=flat-square)](https://github.com/notsim/italiarr/releases)
+[![Build](https://img.shields.io/github/actions/workflow/status/notsim/italiarr/docker-publish.yml?branch=main&style=flat-square&label=build)](https://github.com/notsim/italiarr/actions)
+[![Stars](https://img.shields.io/github/stars/notsim/italiarr?style=social)](https://github.com/notsim/italiarr)
+[![License](https://img.shields.io/github/license/notsim/italiarr?style=flat-square)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/notsim/italiarr/main?style=flat-square)](https://github.com/notsim/italiarr/commits/main)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Top language](https://img.shields.io/github/languages/top/notsim/italiarr?style=flat-square)]()
+[![Repo size](https://img.shields.io/github/repo-size/notsim/italiarr?style=flat-square)]()
+
+[![Works on my machine](https://img.shields.io/badge/Works%20on%20my%20machine-Yes-success?style=flat-square)]()
+[![PRs welcome](https://img.shields.io/badge/PRs%20welcome-Yes-brightgreen?style=flat-square)]()
+[![100% self-hosted](https://img.shields.io/badge/100%25%20self--hosted-Yes-ff69b4?style=flat-square)]()
+[![Made in Italy](https://img.shields.io/badge/Made%20in%20Italy-S%C3%AC-27ae60?style=flat-square)]()
+[![No cloud](https://img.shields.io/badge/No%20cloud-Only%20your%20server-6f42c1?style=flat-square)]()
+[![Powered by yt-dlp](https://img.shields.io/badge/Powered%20by-yt--dlp-FF0000?style=flat-square)](https://github.com/yt-dlp/yt-dlp)
+
 Italiarr è un **server di download musicale** self-hosted: cerchi una canzone o un album, lo scarichi da
 YouTube/YouTube Music come **MP3 320kbps con testi sincronizzati (`.lrc`) e copertina**, e lo ritrovi
 subito nella tua libreria musicale (Navidrome) pronta per l'ascolto.
