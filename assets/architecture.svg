@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+    </marker>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c4dff"/><stop offset="1" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4ade80"/><stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="420" rx="20" fill="#f8fafc"/>
+
+  <!-- Tu -->
+  <rect x="30" y="160" width="150" height="100" rx="16" fill="#fff" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="70" cy="196" r="16" fill="#f59e0b"/>
+  <path d="M58 200 q12 -14 24 0 M58 212 q12 -14 24 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <text x="105" y="204" font-size="17" font-weight="700" fill="#0f172a">Tu</text>
+  <text x="105" y="226" font-size="12" fill="#64748b">Browser / App</text>
+
+  <!-- Navidrome -->
+  <rect x="250" y="150" width="170" height="120" rx="16" fill="url(#g2)"/>
+  <text x="335" y="196" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">Navidrome</text>
+  <text x="335" y="220" text-anchor="middle" font-size="12" fill="#e0f2fe">Ascolto, playlist, recenti</text>
+  <text x="335" y="240" text-anchor="middle" font-size="12" fill="#e0f2fe">(music.simonecloud.online)</text>
+
+  <!-- Italiarr -->
+  <rect x="500" y="150" width="170" height="120" rx="16" fill="url(#g1)"/>
+  <text x="585" y="196" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">Italiarr</text>
+  <text x="585" y="220" text-anchor="middle" font-size="12" fill="#ede9fe">Ricerca e download</text>
+  <text x="585" y="240" text-anchor="middle" font-size="12" fill="#ede9fe">coda 3 in parallelo</text>
+
+  <!-- YouTube -->
+  <rect x="730" y="150" width="110" height="120" rx="16" fill="url(#g3)"/>
+  <text x="785" y="200" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">YouTube</text>
+  <text x="785" y="224" text-anchor="middle" font-size="12" fill="#dcfce7">YouTube Music</text>
+
+  <!-- Cartella musica -->
+  <rect x="250" y="320" width="500" height="60" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="500" y="348" text-anchor="middle" font-size="14" font-weight="600" fill="#475569">Cartella musica condivisa  •  MP3 320kbps + .lrc + copertine</text>
+  <text x="500" y="366" text-anchor="middle" font-size="11" fill="#94a3b8">/data/music (volume Docker)</text>
+
+  <!-- frecce -->
+  <line x1="180" y1="210" x2="245" y2="210" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="425" y1="210" x2="495" y2="210" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="675" y1="210" x2="725" y2="210" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="585" y1="275" x2="585" y2="315" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="585" y1="380" x2="335" y2="380" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="335" y1="275" x2="335" y2="315" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- etichette frecce -->
+  <text x="212" y="198" text-anchor="middle" font-size="11" fill="#64748b">streaming</text>
+  <text x="460" y="198" text-anchor="middle" font-size="11" fill="#64748b">salva e scansiona</text>
+  <text x="700" y="198" text-anchor="middle" font-size="11" fill="#64748b">yt-dlp</text>
+  <text x="465" y="368" text-anchor="middle" font-size="11" fill="#64748b">scansione automatica → Navidrome</text>
+</svg>

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.secrets.env
+browser.json
+*.db
+*.db.bak*
+.DS_Store

@@ -1,0 +1,14 @@
+# Esempio: avvia Italiarr con Docker Compose
+services:
+  italiarr:
+    build: .
+    container_name: italiarr
+    ports:
+      - "8686:8686"
+    environment:
+      # Password di accesso (separate da virgola). CAMBIALA!
+      ITALIARR_PASSWORDS: "italiarr"
+    volumes:
+      # Cartella dove vengono salvati i brani scaricati
+      - ./music:/data/music
+    restart: unless-stopped

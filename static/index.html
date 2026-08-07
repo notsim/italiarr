@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Italiarr</title>
+<link rel="stylesheet" href="style.css?v=2026_3">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+<body>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal" class="login-overlay">
+<div class="login-card">
+<span class="material-symbols-rounded login-icon">lock</span>
+<h2 style="font-size:1.8rem;font-weight:800;margin-bottom:8px;">Accesso Riservato</h2>
+<p style="color:var(--m3-on-surface-variant);margin-bottom:24px;">Inserisci la password di Italiarr per accedere</p>
+<form onsubmit="doLogin(event)">
+<input type="password" id="login-password" class="login-input" placeholder="Password..." required>
+<button type="submit" class="login-btn">Accedi</button>
+</form>
+<p id="login-error" style="color:var(--m3-error);margin-top:14px;display:none;font-weight:600;">Password errata. Riprova.</p>
+</div>
+</div>
+
+<header class="m3-app-bar">
+<div class="logo">
+<svg class="logo-svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<line x1="18" y1="20" x2="18" y2="10"></line>
+<line x1="12" y1="20" x2="12" y2="4"></line>
+<line x1="6" y1="20" x2="6" y2="14"></line>
+</svg>
+<span class="logo-title">Italiarr</span>
+</div>
+
+<nav class="m3-nav-rail">
+<button class="nav-btn active" onclick="switchTab(this,'search')">
+<span class="material-symbols-rounded">search</span>
+<span>Cerca</span>
+</button>
+<button class="nav-btn" onclick="switchTab(this,'downloads')">
+<span class="material-symbols-rounded">download</span>
+<span>Download (<span id="dl-count">0</span>)</span>
+</button>
+<button class="nav-btn" onclick="switchTab(this,'storico')">
+<span class="material-symbols-rounded">history</span>
+<span>Storico</span>
+</button>
+<button class="nav-btn" onclick="switchTab(this,'library')">
+<span class="material-symbols-rounded">library_music</span>
+<span>Libreria</span>
+</button>
+</nav>
+
+<button class="btn-logout" onclick="doLogout()" title="Disconnetti">
+<span class="material-symbols-rounded">logout</span>
+<span class="logout-text">Logout</span>
+</button>
+</header>
+
+<main>
+<section id="tab-search" class="tab active">
+<div class="search-section">
+<h1 class="search-title">Cerca Musica</h1>
+<p class="search-sub">MP3 320kbps &#8226; Testi sincronizzati .lrc</p>
+
+<div class="chip-group">
+<button type="button" class="filter-chip active" id="btn-type-songs" onclick="setSearchType('songs')">
+<span class="material-symbols-rounded">music_note</span> Singoli Brani
+</button>
+<button type="button" class="filter-chip" id="btn-type-albums" onclick="setSearchType('albums')">
+<span class="material-symbols-rounded">album</span> Interi Album
+</button>
+</div>
+
+<form class="m3-search-bar" onsubmit="doSearch(event)">
+<span class="material-symbols-rounded search-box-icon">search</span>
+<input type="text" id="q" class="search-input" placeholder="Cerca artisti, album o brani..." required>
+<button type="submit" class="m3-fab-search">
+<span class="material-symbols-rounded">arrow_forward</span>
+</button>
+</form>
+</div>
+<div id="results" class="grid"></div>
+</section>
+
+<section id="tab-downloads" class="tab">
+<div class="section-header">
+<span class="material-symbols-rounded section-icon">downloading</span>
+<h2 class="search-title">Coda di Download</h2>
+</div>
+<div id="dl-list" style="margin-top:24px"></div>
+</section>
+
+<section id="tab-storico" class="tab">
+<div class="section-header">
+<span class="material-symbols-rounded section-icon">history</span>
+<h2 class="search-title">Storico Download</h2>
+<p class="search-sub">Tutti i brani scaricati, con l'origine: <span class="badge badge-auto">Auto added</span> (dall'automazione) o <span class="badge badge-manual">Downloaded</span> (manuale)</p>
+</div>
+<div id="hist-list" style="margin-top:24px"></div>
+</section>
+
+<section id="tab-library" class="tab">
+<div class="section-header">
+<span class="material-symbols-rounded section-icon">queue_music</span>
+<h2 class="search-title">La Mia Libreria</h2>
+</div>
+<div id="lib-list" class="grid" style="margin-top:24px"></div>
+</section>
+</main>
+
+<div id="toasts"></div>
+<script src="app.js?v=2026_3"></script>
+</body>
+</html>
