@@ -4,8 +4,6 @@
 
 ### Scarica e ascolta la tua musica — semplicemente
 
-[![GitHub release](https://img.shields.io/github/v/release/notsim/italiarr?style=flat-square)](https://github.com/notsim/italiarr/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/notsim/italiarr/docker-publish.yml?branch=main&style=flat-square&label=build)](https://github.com/notsim/italiarr/actions)
 [![Stars](https://img.shields.io/github/stars/notsim/italiarr?style=social)](https://github.com/notsim/italiarr)
 [![License](https://img.shields.io/github/license/notsim/italiarr?style=flat-square)](LICENSE)
 [![Last commit](https://img.shields.io/github/last-commit/notsim/italiarr/main?style=flat-square)](https://github.com/notsim/italiarr/commits/main)
