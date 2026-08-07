@@ -42,8 +42,23 @@ subito nella tua libreria musicale (Navidrome) pronta per l'ascolto.
 
 ### Opzione A — Docker (consigliata)
 
+**Dall'immagine pubblicata su GitHub Container Registry** (la GitHub Action del repo la genera
+automaticamente a ogni release `v*`):
+
 ```bash
-git clone https://github.com/<TUO-UTENTE>/italiarr.git
+docker run -d \
+  -p 8686:8686 \
+  -e ITALIARR_PASSWORDS="scegli-una-password-forte" \
+  -v /percorso/della/mia/musica:/data/music \
+  --name italiarr \
+  --restart unless-stopped \
+  ghcr.io/notsim/italiarr:latest
+```
+
+**Oppure dal codice:**
+
+```bash
+git clone https://github.com/notsim/italiarr.git
 cd italiarr
 
 # imposta la tua password

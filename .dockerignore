@@ -1,0 +1,12 @@
+.git
+__pycache__
+*.pyc
+.secrets.env
+browser.json
+*.db
+*.db.bak*
+.gitignore
+.github
+README.md
+assets
+docker-compose.example.yml
