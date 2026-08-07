@@ -226,7 +226,10 @@ E nel crontab:
 
 ## 9. Note di sicurezza per l'agente
 
-- **MAI** committare o stampare password: usa variabili d'ambiente.
+- **CHIEDI SEMPRE** all'utente cosa vuole fare, se vuole eseguire l'installazione tramite Docker o Python
+- **NON PROSEGUIRE** senza sapere tutti i dati necessari dall'utente
+- **MAI lasciare le password hardcoded, usa SEMPRE le variabili d'ambiente!**
+-  **MAI** MAI lasciare le password default.
 - Il default `ITALIARR_PASSWORDS=italiarr` va sempre sostituito.
 - Le password in `main.py` sono conservate solo come hash SHA-256 generati a runtime.
 - Non esporre la porta 8686 su Internet senza un reverse proxy con TLS (es. Cloudflare Tunnel, Caddy, nginx).
