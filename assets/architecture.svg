@@ -26,7 +26,7 @@
   <rect x="250" y="150" width="170" height="120" rx="16" fill="url(#g2)"/>
   <text x="335" y="196" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">Navidrome</text>
   <text x="335" y="220" text-anchor="middle" font-size="12" fill="#e0f2fe">Ascolto, playlist, recenti</text>
-  <text x="335" y="240" text-anchor="middle" font-size="12" fill="#e0f2fe">(music.simonecloud.online)</text>
+  <text x="335" y="240" text-anchor="middle" font-size="12" fill="#e0f2fe">(il tuo server musica)</text>
 
   <!-- Italiarr -->
   <rect x="500" y="150" width="170" height="120" rx="16" fill="url(#g1)"/>

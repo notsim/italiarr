@@ -41,15 +41,16 @@ socket.setdefaulttimeout(30)
 import requests
 
 # ----------------------------------------------------------------- config ---
-DB_PATH = "/data/config/navidrome/navidrome.db"
-MUSIC_DIR = "/data/music"
+# Tutte le path sono sovrascrivibili con variabili d'ambiente
+DB_PATH = os.environ.get("NAVIDROME_DB", "/data/config/navidrome/navidrome.db")
+MUSIC_DIR = os.environ.get("ITALIARR_MUSIC_DIR", "/data/music")
 PLAYLISTS_DIR = os.path.join(MUSIC_DIR, "Playlists")
-DISCOVER_WEEKLY_M3U = os.path.join(PLAYLISTS_DIR, "Discover Weekly Auto.m3u")  # ours; generate_playlists.py owns 'Discover Weekly.m3u'
-STATE_FILE = "/opt/music-stack/.music_auto_state.json"
-LOCK_FILE = "/opt/music-stack/.music_auto.lock"
-LOG_FILE = "/var/log/music_auto.log"
+DISCOVER_WEEKLY_M3U = os.path.join(PLAYLISTS_DIR, "Discover Weekly Auto.m3u")
+STATE_FILE = os.path.join(MUSIC_DIR, ".music_auto_state.json")
+LOCK_FILE = os.path.join(MUSIC_DIR, ".music_auto.lock")
+LOG_FILE = os.environ.get("MUSIC_AUTO_LOG", "/var/log/music_auto.log")
 
-ITALIARR = "http://127.0.0.1:8686"
+ITALIARR = os.environ.get("ITALIARR_URL", "http://127.0.0.1:8686")
 
 SECRETS_FILE = "/opt/music-stack/.secrets.env"
 
@@ -74,7 +75,7 @@ ITALIARR_PASSWORD = os.environ.get("ITALIARR_PASSWORD", "")
 LASTFM_API_KEY = os.environ.get("LASTFM_API_KEY", "")
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", "")
 LASTFM_SESSION = os.environ.get("LASTFM_SESSION", "")
-LASTFM_USER = "notsim"
+LASTFM_USER = os.environ.get("LASTFM_USER", "")
 LASTFM_API = "https://ws.audioscrobbler.com/2.0/"
 
 MAX_NEW_PER_RUN = 5          # how many new tracks to enqueue per run
