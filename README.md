@@ -177,6 +177,12 @@ italiarr/
 - **Posso usare un altro server musicale al posto di Navidrome?** Italiarr salva semplicemente i file:
   qualsiasi server che scansiona una cartella (Jellyfin, Plex...) va bene.
 
+## 🤖 Installazione con un agente AI
+
+Stai usando un agente AI (ChatGPT, Claude, Copilot, ecc.) per installare Italiarr?
+Apri **[LLM_INSTALL.md](LLM_INSTALL.md)**: è una guida passo-passo scritta apposta per essere
+eseguita da un agente, con comandi esatti, verifiche intermedie e risoluzione dei problemi.
+
 ---
 
 ## 📄 Licenza
